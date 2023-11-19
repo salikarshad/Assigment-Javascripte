@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question No 20</title>
+</head>
+<body>
+    <!-- Q20 : To print the power of A power B using user defined function where A and B are integer input -->
+    
+    <script>
+        var base = prompt("Please input any base no.");
+        var power = prompt("Please input any power no.");
+        base = parseInt(base);
+        var result = 1;
+
+        for (i = 1;  i <= power; i++) {
+          result = result * base;
+        }
+        
+        document.write(base + " exponent " + power + " = " + result);
+    
+
+    </script>
+</body>
+</html>

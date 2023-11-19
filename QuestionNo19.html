@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question No 19</title>
+</head>
+<body>
+    <!-- Q19 : To print the no. from 1 to N along with indication whether each is even or odd -->
+
+    <script> 
+        var userInput = prompt("Please enter any no.");
+        var userInputInteger = parseInt(userInput);
+        
+        for (i = 1; i <= userInputInteger; i++ ) {
+
+            if( i % 2) {
+                document.write(i + " " + "Odd" + "<br>");
+            }else {
+                document.write(i + " " + "Even" + "<br>");
+            }
+        }
+    </script>
+</body>
+</html>

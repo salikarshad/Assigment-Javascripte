@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question No 18</title>
+</head>
+<body>
+    <!-- Q18 : Take a number as input and print all of its divisors -->
+    
+    <script>
+        var divisors = [];
+        var userInput = prompt("Please input any no. greater than 1");
+        var userInput = parseInt(userInput);
+
+        for(i = 0; i <= userInput; i++) {
+            if (userInput%i === 0){
+                divisors.push(i);
+            }
+        }
+
+        document.write("The divisors of given number are: " + divisors);
+        
+    </script>
+    
+</body>
+</html>

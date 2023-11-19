@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question No 6</title>
+</head>
+<body>
+
+    <!-- Q6 : To check weather an input year is leap year or not... -->
+
+    <script>
+
+        var userinput = prompt("Input any Year");
+
+        function leapyear(userinput) {
+            if (userinput % 4 === 0 && userinput % 100 !==0){
+                return true;
+            }else if(userinput % 400 === 0){
+                return true;
+            }else{
+                return false;
+                
+            }
+
+
+        }
+
+        var answer = leapyear(userinput);
+        if (answer === true) {
+            alert("It's a leap year");
+        }else{
+            alert("It's not a leap year");
+        }
+    </script>
+    
+</body>
+</html>
